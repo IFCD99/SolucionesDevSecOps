@@ -3,9 +3,13 @@ import java.io.BufferedReader;    // Importa la clase BufferedReader para leer t
 import java.io.FileReader;        // Importa la clase FileReader para leer archivos desde el sistema de archivos
 import java.io.IOException;       // Importa la clase IOException para manejar errores de entrada/salida
 
-public class AnalizadorCodigo {   // Define la clase principal llamada AnalizadorCodigo
-    public static void main(String[] args) {  // Método principal que se ejecuta al iniciar el programa
-        if (args.length != 1) {   // Verifica que se haya pasado exactamente un argumento (la ruta del archivo)
+// Define la clase principal llamada AnalizadorCodigo
+public class AnalizadorCodigo {
+
+    // Método principal que se ejecuta al iniciar el programa
+    public static void main(String[] args) {
+        // Verifica que se haya pasado exactamente un argumento (la ruta del archivo)
+        if (args.length != 1) {
             System.out.println("Uso: java AnalizadorCodigo <ruta_al_archivo_java>");  // Muestra mensaje de uso correcto
             return;  // Termina la ejecución si no se proporcionó correctamente el argumento
         }
